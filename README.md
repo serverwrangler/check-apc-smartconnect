@@ -18,3 +18,10 @@ The ups-id is shown in the url when using smartconnect.apc.com/.
  ## JSON
 - `brew install cpanm`
 - `sudo cpanm install JSON`
+
+
+## APC SmartConnect API Endpoint urls
+This url returns many parameters from the ups (Battery, input, output, outlets, and network status)
+- `https://smartconnect.apc.com/api/v1/gateways/<MAC ADDRESS OF APC UPS>?collection=input,output,battery,network,main_outlet,switched_outlets`
+This url returns model information, firmware version, check-in status, warranty status,and ups name/description
+- `https://smartconnect.apc.com/api/v1/gateways/<MAC ADDRESS OF APC UPS>/
